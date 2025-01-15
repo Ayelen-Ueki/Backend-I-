@@ -1,0 +1,20 @@
+{
+  "name": "calculateage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "CoderHouse",
+    "Backend1"
+  ],
+  "author": "Ayelen-Ueki",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
