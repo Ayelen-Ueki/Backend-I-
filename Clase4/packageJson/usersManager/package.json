@@ -1,0 +1,14 @@
+{
+  "name": "usersmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "usersManager.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./usersManager.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
