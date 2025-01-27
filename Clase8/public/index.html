@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Beinvenido a mi pagina.</h1>
+   <!--Con este formulario enviamos informacion a petsRouter | enctype se ultiliza para poder especificar que queremos enviar archivos a traves de nuestro formularios-->
+   <form action="http://localhost:8080/api/pets" method="POST" enctype="multipart/form-data">
+    <!--Los nombres de las varibales de las inputs tienen que ser los mismos que los que ser recibiran en la ruta-->
+    <input type="text" name="name" placeholder="Nombre de la mascota">
+    <input type="text" name="age" placeholder="Edad de la mascota">
+    <!--El nombre del input tiene que coincidir con el nombre defindo en petsRouter tambien en el caso de los files-->
+    <input type="file" name="file">
+
+    <button type="submit">Enviar</button>
+   </form>
+</body>
+</html>
