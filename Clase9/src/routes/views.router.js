@@ -25,7 +25,8 @@ viewsRouter.get("/", (req, res)=>{
 })
 //endpoint para nuestro formulario ubicato en register.handlebars
 viewsRouter.get("/register",(req,res)=>{
-    res.render("register",{title:"Register - Handlebars"});
+    //Con la variable style indicamos que hoja de estilos queremos utilizar
+    res.render("register",{title:"Register - Handlebars", style:"other.css"});
 
 })
 

@@ -6,7 +6,8 @@
     {{!-- Dentro del layout tambien podemos recibir variables desde donde se renderiza la pagina--}}
     <title>{{title}}</title>
     {{!-- Los estilos (css) se definen si o si desde el layout --}}
-    <link rel="stylesheet" href="/css/index.css">
+    {{!-- odemos tener mas de un archivo de estilos, por lo que podemos llamarlos con una variabl. Esto se hace desde el endpoint, de la misma forma que pasamos otras variables --}}
+    <link rel="stylesheet" href="/css/{{styles}}">
 </head>
 <body>
     <!--En esta parte se va a mostrar todo el contenido que quiera mostrar dinamicamente y se va a insertar desde index-->
