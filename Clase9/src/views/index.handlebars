@@ -1,0 +1,28 @@
+<div>
+
+    <ul>
+        {{!-- Estructura de iteracion en handlebars para arrays --}}
+        {{#each users}}
+        {{!-- utilizamos "this" para indicar que queremos usar una de las propiedades del array que estamos iterando --}}
+            <li>{{this.name}}</li>
+        {{/each}}
+    </ul>
+
+    <!--con la doble llave insertamos una variable (desde donde renderizamos la vista)-->
+    <h2> Perfil</h2>
+    {{!-- estructura de interacion en handlebars para objetos --}}
+    {{#with selectedUser}}
+        <h3>Nombre: {{name}}</h3>
+        <h3>Apellid: {{lastname}}</h3>
+        <h3>Mail: {{email}}</h3>
+        <h3>Telefono: {{phone}}</h3>
+        {{!-- condicionales en handlebars. Funcionan con valores booleanos --}}
+        {{#if isAdmin}}
+            <h3>Es admin</h3>
+        {{else}}
+            <h3>No es admin</h3>
+        {{/if}}
+    {{/with}}
+</div>
+{{!-- Para utilizar el archivo js dentro de public --}}
+<script src="/js/index.js"></script>
