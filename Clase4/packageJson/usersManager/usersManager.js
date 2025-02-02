@@ -4,7 +4,7 @@ import fs from "fs";
 const secretKey = "miclavesecreta";
 
 class UsersManager {
-    //Los atributos y metodos se declaran como estaicos para poder utilizarlos directamente en las clases, sin necesidad de instanciarlos
+    //Los atributos y metodos se declaran como estaticos para poder utilizarlos directamente en las clases, sin necesidad de instanciarlos
     static users = [];
     //Archivo Json para guardar los datos de los usuarios
     static pathFile = "./users.json";

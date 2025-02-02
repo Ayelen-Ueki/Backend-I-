@@ -26,7 +26,7 @@ petsRouter.post("/",uploader.single("file"), (req, res)=>{
     //Vamos a recibir la informacion del nombre y la edad de la mascota desde el body de request
     const{name, age} = req.body
     //Variable para definir la ruta relativa al archivo que se suba 
-    const pathImage = "/img/" ; req.file.filename;
+    const pathImage = "/img/" + req.file.filename;
 
     if (!name, !age) return res.status(400).send({message: "Error al recuperar los datos de la mascota."});
 
