@@ -1,0 +1,15 @@
+<div>
+    <h1>Chat app</h1>
+    <form id="formChat">
+        <input type="text" id="inputChat" placeholder="Ingrese su mensaje">
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="chatbox">
+        {{!-- Aca se van a ir cargando los mensajes --}}
+    </div>
+</div>
+{{!-- Conexion desde el cliente --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
+{{!-- Lo ponemos en la vista donde queramos que salga el alerta --}}
